@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { filter } from 'lodash';
 import { sentenceCase } from 'change-case';
 import { useState } from 'react';
+import {Link} from 'react-router-dom';
 // @mui
 import {
   Card,
@@ -31,6 +32,9 @@ import { UserListHead, UserListToolbar } from '../sections/@dashboard/user';
 // mock
 import USERLIST from '../_mock/user';
 
+import Model from '../components/Modal';
+
+
 // ----------------------------------------------------------------------
 
 const TABLE_HEAD = [
@@ -53,6 +57,7 @@ function descendingComparator(a, b, orderBy) {
   }
   return 0;
 }
+
 
 function getComparator(order, orderBy) {
   return order === 'desc'
@@ -157,9 +162,8 @@ export default function UserPage() {
           <Typography variant="h4" gutterBottom>
             User
           </Typography>
-          <Button variant="contained" startIcon={<Iconify icon="eva:plus-fill" />}>
-            New User
-          </Button>
+          
+          <Model/>
         </Stack>
 
         <Card>

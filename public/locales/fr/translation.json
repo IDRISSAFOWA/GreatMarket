@@ -1,0 +1,16 @@
+{
+    "login":{
+        "h1":"Connectez-vous à GreadMarket",
+        "label1":"Adresse Email",
+        "placeholder1":"Entrez Votre  Adresse Email",
+        "label2":"Mot de passe",
+        "placeholder2":"Entrez Votre Mot de passe",
+        "button1":"Connexion",
+        "p1":"Salut, bienvenue à nouveau",
+        "errLogin":"Mauvaise authentification",
+        "errConnection":"Un probleme est souvennue verifier votre connexion interne"
+    },
+    "Home":{
+        "paragraphe1":"Bienvennue"
+    }
+}
